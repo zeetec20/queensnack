@@ -1,5 +1,7 @@
 <script>
 	import {getContext} from 'svelte'
+	import {footer} from '../store'
+	footer.set(true)
 
 	let image_snack = getContext('image_snack')
 </script>
@@ -38,7 +40,7 @@
 		<div class="container-fluid p-md-0 ">
 			<div class="row portfolios-area">
 				<div class="mix col-lg-6 col-md-6 web">
-					<a href="{image_snack[0]}" class="portfolio-item set-bg" data-setbg="{image_snack[0]}" style="background-image: url('{image_snack[0]}')">
+					<a href="{image_snack[0].image}" class="portfolio-item set-bg" data-setbg="{image_snack[0].image}" style="background-image: url('{image_snack[0].image}')">
 						<div class="pi-inner">
 							<h2>+ Lihat Snack</h2>
 						</div>						
@@ -46,7 +48,7 @@
 				</div>
 				
 				<div class="mix col-lg-6 col-md-6 web">
-					<a href="{image_snack[1]}" class="portfolio-item set-bg" data-setbg="{image_snack[1]}" style="background-image: url('{image_snack[1]}')">
+					<a href="{image_snack[1].image}" class="portfolio-item set-bg" data-setbg="{image_snack[1].image}" style="background-image: url('{image_snack[1].image}')">
 						<div class="pi-inner">
 							<h2>+ Lihat Snack</h2>
 						</div>						
@@ -54,21 +56,21 @@
 				</div>
 
 				<div class="mix col-lg-4 col-md-6 web">
-					<a href="{image_snack[2]}" class="portfolio-item set-bg" data-setbg="{image_snack[2]}" style="background-image: url('{image_snack[2]}')">
+					<a href="{image_snack[2].image}" class="portfolio-item set-bg" data-setbg="{image_snack[2].image}" style="background-image: url('{image_snack[2].image}')">
 						<div class="pi-inner">
 							<h2>+ Lihat Snack</h2>
 						</div>						
 					</a>
 				</div>
 				<div class="mix col-lg-4 col-md-6 digital">
-					<a href="{image_snack[3]}" class="portfolio-item set-bg" data-setbg="{image_snack[3]}" style="background-image: url('{image_snack[3]}')">
+					<a href="{image_snack[3].image}" class="portfolio-item set-bg" data-setbg="{image_snack[3].image}" style="background-image: url('{image_snack[3].image}')">
 						<div class="pi-inner">
 							<h2>+ Lihat Snack</h2>
 						</div>						
 					</a>
 				</div>
 				<div class="mix col-lg-4 col-md-6 rened">
-					<a href="{image_snack[4]}" class="portfolio-item set-bg" data-setbg="{image_snack[4]}" style="background-image: url('{image_snack[4]}')">
+					<a href="{image_snack[4].image}" class="portfolio-item set-bg" data-setbg="{image_snack[4].image}" style="background-image: url('{image_snack[4].image}')">
 						<div class="pi-inner">
 							<h2>+ Lihat Snack</h2>
 						</div>						

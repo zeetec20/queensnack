@@ -2,6 +2,14 @@
 	<title>About</title>
 </svelte:head>
 
+<script>
+	import {getContext} from 'svelte'
+	import {footer} from '../store'
+	footer.set(true)
+
+	let image_snack = getContext('image_snack')
+</script>
+
 <style>
 	.section1{
 		margin-top: 5%;
@@ -24,14 +32,14 @@ Keunggulan Cemilan dari Queen Snack selain enak dan harganya terjangkau,isi seti
 					<div class="row mt-5">
 						<div class="col-md-4">
 							<div class="milestone">
-								<h2>56<span>Snack</span></h2>
+								<h2>{image_snack.length}<span>Snack</span></h2>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
 					<figure class="pic-frame">
-						<img src="img/about.jpg" alt="">
+						<img src="img/snack/about_snack.jpeg" alt="">
 					</figure>
 				</div>
 			</div>
