@@ -13,7 +13,7 @@
     export let slug
     
     const image_snack = getContext('image_snack')
-    let snack
+    let snack, size
     footer.set(false)
     
     image_snack.map(snck => {
@@ -114,6 +114,7 @@
             <div class="col-lg-8 col-sm-12 control">
                 <div class="row">
                     <h1 class="title">{snack.name}</h1>
+
                 </div>
                 <div class="row">
                         <input type="number" value={quantity} class="form-control quantity">
@@ -121,7 +122,22 @@
                         <button class="btn btn-primary btn-sm button_control_quantity" on:click={() => quantity == 0 ? '' : quantity -= 1}>-</button>
                 </div>
                 <div class="row">
-                    <a on:click={el => quantity == 0 ? el.preventDefault() : ''} href="https://api.whatsapp.com/send?phone={getContext('no_hp')}&text={`Saya ingin membeli ${snack.name} dengan jumlah ${quantity}`.replace(/ /g, '%20')}" class="btn btn-primary button-order">Order</a>
+                    <select bind:value={size} class="custom-select mb-3 w-25 mt-1">
+                        <option value="undefined" selected>Pilih Ukuran</option>
+                        {#each snack.price as snck, key}
+                            <option value={key}>{snck.size}</option>
+                        {/each}
+                    </select>
+                </div>
+                <div class="row">
+                    <h3>Total Harga : Rp.{size == 'undefined' || size == undefined ? '0' : snack.price[size].nominal * quantity}</h3>
+                </div>
+                <div class="row">
+                    {#if size != 'undefined' && quantity != 0}
+                        <a on:click={el => quantity == 0 ? el.preventDefault() : ''} href="https://api.whatsapp.com/send?phone={getContext('no_hp')}&text={`Saya ingin membeli ${snack.name} ${snack.price[size].size} dengan jumlah ${quantity}`.replace(/ /g, '%20')}" class="btn btn-primary button-order">Order</a>
+                    {:else}
+                        <button class="btn btn-primary button-order disabled">Order</button>
+                    {/if}
                     <p class="mt-1">Untuk melakukan pemesanan anda akan diarahkan ke private message Whatsapp</p>
                 </div>
             </div>

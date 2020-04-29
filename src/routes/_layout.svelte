@@ -14,51 +14,135 @@
 		[
 			{
 				image: 'img/snack/snack1.jpg',
-				name: 'Coco Crunch'
+				name: 'Coco Crunch',
+				price: [
+					{
+						size: '240gram',
+						nominal: 10000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack2.jpg',
-				name: 'Opale Medan'
+				name: 'Opak Medan',
+				price: [
+					{
+						size: '245gram',
+						nominal: 10000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack3.jpg',
-				name: 'Kacang Toba'
+				name: 'Kacang Toba',
+				price: [
+					{
+						size: '125gram',
+						nominal: 14000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack4.jpg',
-				name: 'Biduran Keju'
+				name: 'Biduran Keju',
+				price: [
+					{
+						size: '250gram',
+						nominal: 17000
+					},
+					{
+						size: '125gram',
+						nominal: 9000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack5.jpg',
-				name: 'Kacang Bima'
+				name: 'Kacang Bima',
+				price: [
+					{
+						size: '295gram',
+						nominal: 12000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack6.jpg',
-				name: 'Kripik Tepung'
+				name: 'Kripik Tempe',
+				price: [
+					{
+						size: '125gram',
+						nominal: 6000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack7.jpg',
-				name: 'Makaroni Pedas'
+				name: 'Makaroni Pedas',
+				price: [
+					{
+						size: '240gram',
+						nominal: 10000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack8.jpg',
-				name: 'Marning Pedas Manis'
+				name: 'Marning Pedas Manis',
+				price: [
+					{
+						size: '385gram',
+						nominal: 6000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack9.jpg',
-				name: 'Kripik Pangsit'
+				name: 'Kripik Pangsit',
+				price: [
+					{
+						size: '250gram',
+						nominal: 10000
+					},
+					{
+						size: '125gram',
+						nominal: 5000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack10.jpg',
-				name: 'Potato'
+				name: 'Potato',
+				price: [
+					{
+						size: '170gram',
+						nominal: 10000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack11.jpg',
-				name: 'Makaroni Rujak'
+				name: 'Makaroni Rujak',
+				price: [
+					{
+						size: '190gram',
+						nominal: 10000
+					}
+				]
 			},
 			{
 				image: 'img/snack/snack12.jpg',
-				name: 'Stick'
+				name: 'Stick',
+				price: [
+					{
+						size: '170gram',
+						nominal: 10000
+					},
+					{
+						size: '85gram',
+						nominal: 5000
+					}
+				]
 			}
 		]
 	)
@@ -101,6 +185,7 @@
 						<li><a href="/">Home</a></li>
 						<li><a href="about">About Me</a></li>
 						<li><a href="snack">Snack</a></li>
+						<li><a href="article">Article</a></li>
 					</ul>
 				</nav>
 			</div>
