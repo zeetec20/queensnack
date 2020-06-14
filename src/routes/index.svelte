@@ -28,15 +28,6 @@
 	</section>
 
 	<section class="portfolio-section">
-		<!-- <div class="container">
-			<ul class="portfolio-filter controls">
-				<li class="control" data-filter="all">All</li>
-				<li class="control" data-filter=".web">Web design</li>
-				<li class="control" data-filter=".digital">Digital design</li>
-				<li class="control" data-filter=".rened">3D Renedering</li>
-				<li class="control" data-filter=".brand">Brand Identity</li>
-			</ul>
-		</div>                        -->
 		<div class="container-fluid p-md-0 ">
 			<div class="row portfolios-area">
 				<div class="mix col-lg-6 col-md-6 web">
@@ -75,6 +66,43 @@
 							<h2>+ Lihat Snack</h2>
 						</div>						
 					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio-section">
+		<div class="container-fluid p-md-0 w-80">
+			<h1 style="width: 100%; text-align: center; font-size: 50px; margin-top: 50px">Testimoni</h1>
+			
+			<div class="row">
+				<div class="cog-lg-11 col-md-4 m-auto">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin: auto; margin-top: 20px">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner w-80">
+							<div class="carousel-item active">
+								<img class="d-block" src="img/testimoni/testimoni1.jpeg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block" src="img/testimoni/testimoni2.jpeg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block" src="img/testimoni/testimoni3.jpeg" alt="First slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
